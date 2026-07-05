@@ -8,7 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test" : "vitest"
+    "test": "vitest",
+    "postinstall": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm",
+    "dependencies": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm"
   },
   "dependencies": {
     "react": "^18.3.1",
